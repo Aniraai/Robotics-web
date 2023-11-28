@@ -1,0 +1,58 @@
+@font-face {
+    font-family: robotics-original;
+    src: url(nasalization-rg.otf);
+}
+* {
+    font-family: robotics-original  ;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    width: 100vw;
+    background-size:cover;
+}
+
+
+
+/* navbar starts here  */
+nav {
+    width: 100%;
+    z-index: 3;
+    display: grid;
+    position: fixed;
+    place-items: center;
+}
+
+
+.container {
+    width: 90%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.logo img {
+    width: 60px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.contact-btn{
+    border-radius:4vw;
+    padding: 9px;
+    
+     
+
+}
+
