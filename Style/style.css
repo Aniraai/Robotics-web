@@ -1,0 +1,116 @@
+@font-face {
+    font-family: robotics-original;
+    src: url(nasalization-rg.otf);
+}
+* {
+    font-family: robotics-original  ;
+    margin: 0;
+    /* overflow: hidden; */
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    width: 100vw;
+    
+    background-size:cover;
+}
+
+
+
+/* navbar starts here  */
+nav {
+    width: 100%;
+    z-index: 3;
+    display: grid;
+    position: fixed;
+    top:0;
+    place-items: center;
+}
+
+
+.container {
+    width: 90%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.logo img {
+    width: 60px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.contact-btn{
+    border-radius:12px;
+    width: 150px;
+    padding: 9px;
+    background-color: rgba(158, 42, 43, 1);
+    
+     
+
+}
+
+.baground-img{
+    width: 70vw;
+    height: 20vh;
+
+
+
+}
+
+.landing-page-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102vw;
+    height: 83vh;
+    z-index: -10;
+}
+
+.radial-gradient{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 60%), rgba(100, 106, 109, 100%));
+}
+
+.center-txt{
+    width: 65vw;
+    height: 68vh;
+    font-size: 6rem;
+    margin: auto;
+    margin-top: 250px;
+    margin-left: 300px;
+    font-weight: 20px;
+    color:white;
+    align-items: center;
+
+}
+.p1
+{
+    margin-left: 170px;
+}
+
+.custom-wave-div img{
+    width: 101vw;
+    height: 70vh;
+    /* left: 0; */
+    margin-top: -320px;
+    margin-left: 2px;
+}
+
+
+
