@@ -1,9 +1,10 @@
-@font-face {
+/* @font-face { 
     font-family: robotics-original;
     src: url(nasalization-rg.otf);
 }
+*/
 * {
-    font-family: robotics-original  ;
+    /* font-family: robotics-original  ; */
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -46,13 +47,33 @@ nav {
     text-decoration: none;
     color: white;
     margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.links a:hover{
+font-size: 1.2rem;
 }
 
 .contact-btn{
-    border-radius:4vw;
+    border-radius:8px;
     padding: 9px;
-    
+    background-color:  #9E2A2B;
+    color: white;
+    border:none;    
+    font-size: 1.1rem;
+    width: 10rem;
+    transition: all 0.3s ease-in-out;     
      
 
+}
+.contact-btn:hover{
+    background-color: #570f0f;
+    font-size: 1.2rem;
+}
+
+.contact-btn img{
+height: 1.2rem;
+padding-left:  8px;
+position: relative;
+   top: 3px;
 }
 
