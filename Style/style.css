@@ -3,13 +3,14 @@
     src: url(nasalization-rg.otf);
 }
 * {
-    font-family: robotics-original  ;
+    font-family: 'poppins', sans-serif ;
     margin: 0;
     /* overflow: hidden; */
     padding: 0;
 }
 
 body{
+   font-family: sans-serif;
     background-color: black;
     /* background-repeat: no-repeat; */
     width: 100vw;
@@ -22,7 +23,7 @@ body{
 
 /* navbar starts here  */
 .upper{
-    background-image: url("/Robotics-web/Items/upper.png");
+    
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,8 +58,9 @@ nav {
 .upper p{
     
     color: white;
-    font-size: 8rem;
+    font-size: 5.5rem;
     text-shadow: 2px 2px 10px black;
+    font-weight: 600;
     
    
     
@@ -67,7 +69,7 @@ nav {
 .upper p1{
     
     color: white;
-    font-size: 6rem;
+    font-size: 4.5rem;
     text-shadow: 2px 2px 10px black;
     
 }
@@ -139,5 +141,111 @@ padding-left: 10px;}
     margin-top: -320px;
     margin-left: 2px;
 }
+#events{
+
+    margin-top: 20px;
+margin-left: 200px;
+    margin-right: 200px;
+
+    
+   
+   
+}
+#events p{
+    text-align: center;
+    margin-top: 20px;
+}
+#events #events{
+    transform: translateX(210%);
+   margin-top: 90px;
+    height: 50px;
+    width: 140px;         
+         
+            background-image: linear-gradient(to right, #601112 0%, #1F1C18  0%, #601112  100%);
+           color: white;
+    border: red;
+    border-radius: 40px;
+    font-size: 1.4rem;
+  border: 2px solid #9E2A2B;
+}        
 
 
+
+         
+
+#events h1{
+     
+text-align: center;
+padding-top:70px;
+    font-weight: 900;
+    font-size: 5rem;
+    
+}
+#events p{
+padding-bottom: 90px;}
+/* ///////////////////middle part 
+ */
+#list{
+    
+display: flex;
+    flex-wrap: wrap;
+   margin-left: 100px;
+    margin-right: 100px;
+    }
+
+.box{
+    height: 200px;
+    width: 23% ;
+    padding:26px 7px 17px 18px ;
+    border-radius: 1px;
+    
+    border-style: solid ;
+    border-color: #919191;
+   
+   
+}
+.b1{
+border-width: 0px 1px 1px 1px;}
+.b2{
+border-width: 0px 1px 1px 0px;}
+.b3{
+    border-width: 0px 1px 1px 0px;
+ background: rgb(0,0,0);
+background: linear-gradient(211deg, rgba(0,0,0,1) 43%, rgba(102, 14, 14, 1) 100%);  
+   
+   
+}
+.b4{
+border-width: 0px 1px 1px 0px;}
+.b5{
+    border-width: 0px 0px 0px 1px;
+}
+.b6{
+     border-width: 0px 0px 0px 1px;
+}
+.b7{
+ border-width: 0px 0px 0px 1px;}
+.b8{
+ border-width: 0px 1px 0px 1px;}
+
+
+.box img{
+border-radius: 50%;
+border: 2px solid white;
+    height: 35px;
+    transition: height 0.5s ease-in-out;
+    -webkit-filter: blur(0.5px);
+}
+.box img:hover{
+height: 40px;}
+.b3 img{
+border: 2px solid #650b0b;
+    }
+.box h2{
+padding-top:31px;
+    font-size: 1.2rem;
+}
+
+.box p{
+padding-top: 16px;
+font-size: 0.8rem;}
