@@ -13,7 +13,7 @@ body{
     background-color: black;
     /* background-repeat: no-repeat; */
     width: 100vw;
-    
+    /* overflow: hidden; */
     background-size:cover;
 }
 
@@ -22,13 +22,13 @@ body{
 /* navbar starts here  */
 .upper{
     background-image: url("/Items/upper.png");
-    height: 700px;
+    height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-justify-content: center;
+    justify-content: center;
     align-items:  center;
-      flex-direction: column;
+    flex-direction: column;
  
     
   
@@ -56,11 +56,19 @@ nav {
 .upper p{
     
     color: white;
-    font-size: 5rem;
+    font-size: 8rem;
     text-shadow: 2px 2px 10px black;
+    margin-top: 150px;
    
     
 
+}
+.upper p1{
+    
+    color: white;
+    font-size: 6rem;
+    text-shadow: 2px 2px 10px black;
+    margin: 20px;
 }
 
 .logo img {
@@ -118,32 +126,10 @@ padding-left: 10px;}
     z-index: -10;
 }
 
-.radial-gradient{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 60%), rgba(100, 106, 109, 100%));
-}
 
-.center-txt{
-    width: 65vw;
-    height: 68vh;
-    font-size: 6rem;
-    margin: auto;
-    margin-top: 250px;
-    margin-left: 300px;
-    font-weight: 20px;
-    color:white;
-    align-items: center;
 
-}
-.p1
-{
-    margin-left: 170px;
-}
+
+
 
 .custom-wave-div img{
     width: 101vw;
@@ -154,7 +140,8 @@ padding-left: 10px;}
 }
 #wave{
 position: absolute;
-    top: 450px;
+    top: 800px;
+    left: -20px;
 }
 
 
