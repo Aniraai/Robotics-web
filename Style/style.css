@@ -20,6 +20,20 @@ body{
 
 
 /* navbar starts here  */
+.upper{
+    background-image: url("/Items/upper.png");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+justify-content: center;
+    align-items:  center;
+      flex-direction: column;
+ 
+    
+  
+}
+
 nav {
     width: 100%;
     z-index: 3;
@@ -39,6 +53,15 @@ nav {
     margin-top: 20px;
 
 }
+.upper p{
+    
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 2px 10px black;
+   
+    
+
+}
 
 .logo img {
     width: 60px;
@@ -47,19 +70,36 @@ nav {
 .links a {
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 30px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
 }
+.links a:hover{
+font-size:1.3rem; }
 
 .contact-btn{
     border-radius:12px;
     width: 150px;
     padding: 9px;
-    background-color: rgba(158, 42, 43, 1);
+    background-color: #9E2A2B;
     color: white    ;
+    border:none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+    
+    
     
      
 
 }
+.contact-btn:hover{
+    font-size: 1.2rem;
+    background-color: #911617;
+}
+.contact-btn img{
+position: relative;
+top: 3px;
+padding-left: 10px;}
 
 .baground-img{
     width: 70vw;
@@ -112,6 +152,9 @@ nav {
     margin-top: -320px;
     margin-left: 2px;
 }
-
+#wave{
+position: absolute;
+    top: 450px;
+}
 
 
