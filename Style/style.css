@@ -39,10 +39,15 @@ body{
 nav {
     width: 100%;
     z-index: 3;
+    left:0;
     display: grid;
     position: fixed;
     top:0;
     place-items: center;
+    /* background-color: rgb(133, 5, 5);
+     */
+     background: linear-gradient(211deg, rgba(0,0,0,1) 43%, rgba(102, 14, 14, 1) 100%);  
+
 }
 
 
@@ -134,13 +139,18 @@ padding-left: 10px;}
 
 
 
-.custom-wave-div img{
-    width: 101vw;
-    height: 70vh;
-    /* left: 0; */
-    margin-top: -320px;
-    margin-left: 2px;
+.wave{
+    width: 99vw;
+    height: 60vh;
+    position: absolute;
+    margin-top: 935px;
 }
+
+/* first div ends here */
+
+
+
+/* events description starts here */
 #events{
 
     margin-top: 20px;
