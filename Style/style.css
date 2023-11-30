@@ -11,7 +11,7 @@
 
 body{
    font-family: sans-serif;
-    background-color: black;
+    background-color: #0D0D0D;
     /* background-repeat: no-repeat; */
     width: 100vw;
     /* overflow: hidden; */
@@ -140,10 +140,10 @@ padding-left: 10px;}
 
 
 .wave{
-    width: 99vw;
-    height: 60vh;
+   width:100%;
+    
     position: absolute;
-    margin-top: 935px;
+    margin-top: 810px;
 }
 
 /* first div ends here */
@@ -222,7 +222,7 @@ border-width: 0px 1px 1px 0px;}
 .b3{
     border-width: 0px 1px 1px 0px;
  background: rgb(0,0,0);
-background: linear-gradient(211deg, rgba(0,0,0,1) 43%, rgba(102, 14, 14, 1) 100%);  
+background: linear-gradient(211deg, rgba(13,13,13) 43%, rgba(102, 14, 14, 1) 100%);  
    
    
 }
