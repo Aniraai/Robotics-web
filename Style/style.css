@@ -74,7 +74,7 @@ nav {
 .upper p1{
     
     color: white;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     text-shadow: 2px 2px 10px black;
     
 }
@@ -272,21 +272,87 @@ margin-left: 350px;
 }
 
 .milestone h1{
-
+    text-align: center;
+    padding-top:55px;
+    font-weight: 500;
+    font-size: 5rem;
+    margin-left: -100px;
 }
 
 #mile{
-    transform: translateX(210%);
-   margin-top: 30px;
-   /* margin-left: 30px; */
+    transform: translateX(200%);
+    position: relative;
+   /* margin-top: 3px; */
+   margin-left: 20px;
     height: 50px;
     width: 140px;         
-         
-            background-image: linear-gradient(to right, #601112 0%, #1F1C18  0%, #601112  100%);
-           color: white;
+    background-image: linear-gradient(to right, #601112 0%, #1F1C18  0%, #601112  100%);
+    color: white;
     border: red;
     border-radius: 40px;
     font-size: 1.4rem;
-  border: 2px solid #9E2A2B;
+    border: 2px solid #9E2A2B;
+    
 }
+
+
+.milestone p{
+    padding-top: 50px;
+    width: 50vw;
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* 8 div css of milestone */
+
+
+.milecontainer{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 20px; */
+    justify-content: space-evenly;
+  
+
+}
+.milebox1{
+    height: 300px;
+    width: 20% ;
+    padding:30px 7px 17px 18px ;
+    border-radius: 2px;
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: solid ;
+    border-color: #919191;
+    border-radius: 20px;
+    margin-left :30px ;
+    margin-top: 100px;
+    backface-visibility: visible;
+    opacity: 0.5;
+    /* box-shadow: 0 0 8px 8px white inset; */
+    backdrop-filter: blur(10px); 
+
+
+}
+
+.milebox2{
+    height: 300px;
+    width: 15% ;
+    padding:30px 7px 17px 18px ;
+    border-radius: 1px;
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: solid ;
+    border-color: #919191;
+    border-radius: 20px;
+    margin-left :30px ;
+    margin-top: 100px;
+    opacity: 0.5;
+    /* background-color: rgb(255 255 255 / 0.3); */
+    backdrop-filter: blur(10px);
+   
+    /* filter: blur(5px); */
+}
+
 
