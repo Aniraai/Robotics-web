@@ -61,7 +61,7 @@ nav {
 
 }
 .upper p{
-    transform: translateY(18rem);
+    transform: translateY(28rem);
     color: white;
     font-size: 5.5rem;
     text-shadow: 2px 2px 10px black;
@@ -72,7 +72,7 @@ nav {
 
 }
 .upper p1{
-     transform: translateY(18rem);
+     transform: translateY(29rem);
     
     color: white;
     font-size: 5.5rem;
@@ -144,7 +144,7 @@ padding-left: 10px;}
    width:100%;
     
  
-    margin-top: 410px;
+    margin-top: 610px;
 }
 
 /* first div ends here */
@@ -174,7 +174,7 @@ margin-left: 200px;
 }
 #events #eventbtn{
     
-   margin-top: 90px;
+   margin-top: 50px;
    
     height: 50px;
     width: 140px;         
@@ -314,6 +314,7 @@ justify-content: center;
     width: 50vw;
     
     font-size: 1.1rem;
+    letter-spacing: 1px;
     
     
 }
@@ -423,14 +424,14 @@ height: 70px;
 }
 .divider {
     width: 0.4rem; 
-    height:17rem; 
+    height:15.5rem; 
     background:linear-gradient( rgba(107, 19, 19, 1),rgba(40, 22, 22, 1));
     border-radius: 0.25rem;
     margin-top: 5rem; 
    
   }
 #test1 p{
-    margin-top: -150px;
+    margin-top: -138px;
     margin-left: 20px;
     padding-right: 50px;
     font-size: 1.1rem;
@@ -449,4 +450,76 @@ height: 70px;
 }
 
   
+.about{
+   padding-top: 130px;
+       display: flex;
+   text-align: center;
+justify-content: center; 
+  align-items: center; 
+}
+#aboutbtn{
+    height: 50px;
+    width: 140px;         
+    background:linear-gradient( 130deg,rgba(156, 42, 43, 0.31),rgba(116, 34, 35, 0.62),rgb(44, 43, 43));
 
+    color: white;
+    border: red;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    border: 2px solid #9E2A2B;
+    
+}
+.about h1{
+margin-top: 60px;
+font-size:4rem;
+font-weight:100;
+    letter-spacing: 8px;
+
+}
+.work{
+    padding-top: 120px;
+    height: 450px;
+    padding-left: 190px;
+    padding-right: 190px;
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+   
+  
+}
+.work h1{
+    font-weight: 200;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+   
+    
+}
+#work1{
+float: right;
+width:410px;}
+#work2{
+    margin-top: 290px;width:410px;
+
+   }
+.work p{
+    padding-top: 50px;
+    color: #898B8D;
+     letter-spacing: 1px;
+    
+}
+#fun{
+    margin-top: 70px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#fun #big{
+    font-size: 2.8rem;
+    font-weight: 600;
+    
+}
+#fun #med{
+font-size:  2.3rem;
+font-weight: 100;}
+#fun #vbig{
+font-size: 3rem;}
+/* footer  */
