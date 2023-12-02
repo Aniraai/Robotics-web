@@ -39,10 +39,10 @@ body{
 
 nav {
     width: 100%;
-    z-index: 3;
+    
     left:0;
     display: grid;
-    position: fixed;
+    position:absolute ;
     top:0;
     place-items: center;
     /* background-color: rgb(133, 5, 5);
@@ -64,7 +64,7 @@ nav {
     transform: translateY(28rem);
     color: white;
     font-size: 5.5rem;
-    text-shadow: 2px 2px 10px black;
+    text-shadow: 1px 1.5px 10px black;
     font-weight: 600;
     
    
@@ -76,7 +76,7 @@ nav {
     
     color: white;
     font-size: 5.5rem;
-    text-shadow: 2px 2px 10px black;
+    text-shadow: 1px 1.5px 10px black;
     
 }
 
@@ -201,7 +201,8 @@ padding-top:70px;
     
 }
 #events p{
-padding-bottom: 90px;}
+padding-bottom: 90px;
+}
 /* ///////////////////middle part 
  */
 #list{
@@ -220,6 +221,7 @@ display: flex;
     
     border-style: solid ;
     border-color: #919191;
+    color: #c7c6c3;
    
    
 }
@@ -252,7 +254,7 @@ border-width: 0px 1px 1px 0px;}
 border-radius: 50%;
 border: 2px solid white;
     height: 35px;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.2s ease-in-out;
     -webkit-filter: blur(0.5px);
 }
 .box img:hover{
@@ -267,7 +269,8 @@ padding-top:31px;
 
 .box p{
 padding-top: 16px;
-font-size: 0.8rem;}
+font-size: 0.9rem;
+line-height:24px;}
 
 
 /* milestone section begins here */
@@ -347,13 +350,14 @@ justify-content: center;
     opacity: 0.5;
     /* box-shadow: 0 0 8px 8px white inset; */
     backdrop-filter: blur(10px); 
+    line-height: 27px;
 
 
 }
 
 .milebox2{
-    height: 300px;
-    width: 15% ;
+    height: 350px;
+    width: 16% ;
     padding:30px 7px 17px 18px ;
     border-radius: 1px;
     border-width: 1px;
@@ -366,6 +370,7 @@ justify-content: center;
     opacity: 0.5;
     /* background-color: rgb(255 255 255 / 0.3); */
     backdrop-filter: blur(10px);
+    line-height: 27px;
    
     /* filter: blur(5px); */
 }
@@ -405,7 +410,7 @@ justify-content: center;
 display: flex;
    
     justify-content: space-evenly;
-
+line-height: 27px;
 }
 #test1{
     margin-top: 70px;
@@ -497,9 +502,13 @@ font-weight:100;
 }
 #work1{
 float: right;
-width:410px;}
+width:410px;
+margin-right:-40px;
+line-height: 27px;
+}
 #work2{
     margin-top: 290px;width:410px;
+    line-height: 27px;
 
    }
 .work p{
@@ -530,12 +539,13 @@ font-size: 3rem;}
     flex-wrap: wrap;
     border-width: 2rem;
     border-color: #898B8D;
-    border:2px solid ;
-    margin-left: 5px;
-    margin-top: 200px;
+    border-top:1px #A2A2A2 solid ;
+    border-bottom: 1px #A2A2A2 solid ;
+    
+    margin-top: 170px;
     justify-content: space-evenly;
     padding: 20px;
-    
+   
 
 }
 
@@ -543,13 +553,18 @@ font-size: 3rem;}
     height: 300px;
     width: 20% ;
     padding:10px 10px 10px 10px ;
-    border-radius: 20px;
-    margin-left :30px ;
+   
+    
     margin-top: 100px;
 
    
 
 }
+.footbox1 h3{
+    letter-spacing: 4px;
+padding-left: 10px;
+padding-bottom: 30px;
+font-size: 20px;}
 
 .footbox1 a{
     display: flex;
@@ -563,30 +578,52 @@ font-size: 3rem;}
 
 #email{
     border-radius: 20px;
-    width: 12vw;
-    border: 2px solid;
-    height: 5vh;
-    background-color: #0D0D0D;
-    color: white;
+    width: 60%;
+    border: 2px #D9D9D9 solid;
+    height: 45px;
+    background-color: transparent;
+    color:  #D9D9D9;
+    text-align: left;
+    padding-left: 18px;
+    font-size: 1rem;
+    cursor: text;
     
 
 }
 
-.submitbtn{
-    height: 40px;
-    width: 150px; 
-    border-radius:20px ;
-    border-width: 0px 0px 0px 1px;
-    background-color: rgba(156, 42, 43, 0.31);
-    color: white;
-    border: red;
-    background:linear-gradient( 130deg,rgba(156, 42, 43, 0.31),rgba(116, 34, 35, 0.62),rgb(44, 43, 43));
-   
 
-    font-size: 1.2rem;
-    border: 1px solid #9E2A2B;
-    transform: translateX(100px);
+
+.contactus img{
+height: 40px;
+padding-right: 20px;
+margin-top: 15px;}
+.lastbox{
+width: 27%;
+margin-left:-70px;}
+#submitbtn{
+    margin-top: 60px;
+    width: 110px;
+    margin-left: 10px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    background:linear-gradient( 130deg,rgba(156, 42, 43, 0.31),rgba(116, 34, 35, 0.62),rgb(44, 43, 43));
+     border: 2px #9E2A2B solid ;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition:all 0.2s ease-in-out;
 }
+#submitbtn:hover{
+    font-size: 1.2rem;
+}
+.footbox1 p{
+    margin-left:  10px;
+}
+#lastlogo{
+padding-bottom:30px;
+margin-left: 10px;}
+
 
 
 
