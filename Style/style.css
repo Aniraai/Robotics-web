@@ -449,6 +449,7 @@ height: 70px;
 
 }
 
+/* about section css */
   
 .about{
    padding-top: 130px;
@@ -522,4 +523,71 @@ font-size:  2.3rem;
 font-weight: 100;}
 #fun #vbig{
 font-size: 3rem;}
-/* footer  */
+/* --------------------footer------------  */
+
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 2rem;
+    border-color: #898B8D;
+    border:2px solid ;
+    margin-left: 5px;
+    margin-top: 200px;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+
+}
+
+.footbox1{
+    height: 300px;
+    width: 20% ;
+    padding:10px 10px 10px 10px ;
+    border-radius: 20px;
+    margin-left :30px ;
+    margin-top: 100px;
+
+   
+
+}
+
+.footbox1 a{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#email{
+    border-radius: 20px;
+    width: 12vw;
+    border: 2px solid;
+    height: 5vh;
+    background-color: #0D0D0D;
+    color: white;
+    
+
+}
+
+.submitbtn{
+    height: 40px;
+    width: 150px; 
+    border-radius:20px ;
+    border-width: 0px 0px 0px 1px;
+    background-color: rgba(156, 42, 43, 0.31);
+    color: white;
+    border: red;
+    background:linear-gradient( 130deg,rgba(156, 42, 43, 0.31),rgba(116, 34, 35, 0.62),rgb(44, 43, 43));
+   
+
+    font-size: 1.2rem;
+    border: 1px solid #9E2A2B;
+    transform: translateX(100px);
+}
+
+
+
+
