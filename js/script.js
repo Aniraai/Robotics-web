@@ -9,6 +9,13 @@ function handleIntersection(entries, observer) {
 
 
 const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+var loader= document.getElementById("preloader");
+
+window.addEventListener("load", vanish);
+
+function vanish(){
+    loader.classList.add("disppear");
+}
 
 
 const intersectionElement = document.querySelector('.intersection-trigger');
@@ -16,3 +23,4 @@ const intersectionElement = document.querySelector('.intersection-trigger');
 if (intersectionElement) {
     observer.observe(intersectionElement);
 }
+
