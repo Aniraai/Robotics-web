@@ -211,7 +211,9 @@ display: flex;
     flex-wrap: wrap;
    margin-left: 100px;
     margin-right: 100px;
-    }
+    
+
+}
 
 .box{
     height: 200px;
@@ -561,7 +563,7 @@ font-size: 3rem;}
 
 }
 .footbox1 h3{
-    letter-spacing: 4px;
+letter-spacing: 4px;
 padding-left: 10px;
 padding-bottom: 30px;
 font-size: 20px;}
@@ -623,6 +625,24 @@ margin-left:-70px;}
 #lastlogo{
 padding-bottom:30px;
 margin-left: 10px;}
+
+
+
+/* js animation */
+
+
+.intersection-trigger {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.intersection-trigger.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 
 
