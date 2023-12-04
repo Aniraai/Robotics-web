@@ -31,8 +31,9 @@ body{
 }
 
 .disppear{
-    animation: vanish 3s forwards;
+    animation: vanish 2s forwards;
 }
+/* preloader ends */
 
 @keyframes vanish {
     100%{
@@ -89,19 +90,16 @@ nav {
     font-size: 5.5rem;
     text-shadow: 1px 1.5px 10px black;
     font-weight: 600;
+    /* animation:hider 1s  forward; */
     
    
     
 
 }
-.upper p1{
-     transform: translateY(29rem);
-    
-    color: white;
-    font-size: 5.5rem;
-    text-shadow: 1px 1.5px 10px black;
-    
-}
+
+
+
+
 
 .logo img {
     width: 60px;
@@ -173,6 +171,8 @@ padding-left: 10px;}
 /* first div ends here */
 
 
+/* hider animation */
+
 
 /* events description starts here */
 .contant{
@@ -225,6 +225,19 @@ padding-top:70px;
 }
 #events p{
 padding-bottom: 90px;
+}
+
+
+/* animation in the animation  */
+#events .contant {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s, transform 0.5s;
+}
+
+#events .contant.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 /* ///////////////////middle part 
  */
@@ -362,16 +375,16 @@ justify-content: center;
 
 
 }
+/* intersection observer */
+.milecontent {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.5s, transform 0.5s;
+}
 
-@keyframes milestoneAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.milecontent.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .milebox1{
@@ -414,6 +427,21 @@ justify-content: center;
    
     /* filter: blur(5px); */
 }
+/* -------------------------------------------------- */
+/* animation */
+.milebox1,
+.milebox2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.milebox1.is-visible,
+.milebox2.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ---------------------------------------------------- */
 
 /* testimoial section css */
 
@@ -494,6 +522,16 @@ height: 70px;
 
 }
 
+.testimoials div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.testimoials div.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* about section css */
   
 .about{
@@ -572,6 +610,25 @@ font-size:  2.3rem;
 font-weight: 100;}
 #fun #vbig{
 font-size: 3rem;}
+
+
+/* animation */
+.us,
+        #work1,
+        #work2,
+        #fun {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .us.is-visible,
+        #work1.is-visible,
+        #work2.is-visible,
+        #fun.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 /* --------------------footer------------  */
 
 .foot{
@@ -665,6 +722,19 @@ padding-bottom:30px;
 margin-left: 10px;}
 
 
+/* js animation for footer */
+.footbox1,
+        .lastbox {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .footbox1.is-visible,
+        .lastbox.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
 /* js animation */
 
