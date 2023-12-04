@@ -85,17 +85,35 @@ nav {
 
 }
 .upper p{
+    /* display: ; */
     transform: translateY(28rem);
     color: white;
     font-size: 5.5rem;
     text-shadow: 1px 1.5px 10px black;
     font-weight: 600;
+    animation: fadeIn 3s ease-in-out forwards;
     /* animation:hider 1s  forward; */
     
    
     
 
 }
+
+
+
+/* typewriter animation for the text */
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 2;
+    }
+  }
+
+
 
 
 
