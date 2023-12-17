@@ -87,5 +87,49 @@ footerElements.forEach(element => {
     observer1.observe(element);
 });
 
+//reverse intersection
+
+function handleReverseIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            entry.target.classList.remove('is-visible');
+            // You can add additional logic here if needed
+        }
+    });
+}
+
+
+const reverseObserver = new IntersectionObserver(handleReverseIntersection, { threshold: 0.0 });
+
+// Reverse observer for the main trigger element
+if (intersectionElement) {
+    reverseObserver.observe(intersectionElement);
+}
+
+// Reverse observer for the milestone intersection
+reverseObserver.observe(targetElement1);
+
+// Reverse observer for mile box intersection
+mileboxElements.forEach(element => {
+    reverseObserver.observe(element);
+});
+
+// Reverse observer for testimonial intersection
+testimonialElements.forEach(element => {
+    reverseObserver.observe(element);
+});
+
+// Reverse observer for about us section intersection
+elementsToAnimate.forEach(element => {
+    reverseObserver.observe(element);
+});
+
+// Reverse observer for footer section intersection
+footerElements.forEach(element => {
+    reverseObserver.observe(element);
+});
+
+
+
 
 
