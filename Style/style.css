@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family:"poppins";
+  font-family: "poppins";
   background-color: #0d0d0d;
   /* background-repeat: no-repeat; */
 
@@ -144,16 +144,10 @@ nav {
   z-index: -10;
 }
 
+.wave {
+  width: 100%;
 
-
-
-
-
-.wave{
-   width:100%;
-    
- 
-    margin-top: 610px;
+  margin-top: 610px;
 }
 
 /* first div ends here */
