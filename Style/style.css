@@ -99,8 +99,9 @@ nav {
   width: 60px;
 }
 
+
 .links a {
-  text-decoration: none;
+  text-decoration : none;
   color: white;
   margin: 30px;
   font-size: 1.1rem;
@@ -149,6 +150,104 @@ nav {
 
   margin-top: 610px;
 }
+/* -------------------------------------MEDIA QUERY */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  padding: 10px;
+  color: white;
+  /* background: #911617; */
+
+  
+}
+.linksToggle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  background: linear-gradient(
+    130deg,
+    rgba(156, 42, 43, 0.31),
+    rgba(116, 34, 35, 0.62),
+    rgb(44, 43, 43)
+  );
+}
+
+
+.linksToggle {
+  display: none;
+  flex-direction: column;
+}
+
+.linksToggle a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: none;
+}
+
+
+.linksToggle.show {
+  display: flex;
+  opacity: 4;
+  /* background-color: #650b0b; */
+}
+
+
+
+.toggle-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  display: none;
+
+  
+}
+
+
+
+/* media query */
+
+@media screen and (max-width: 900px){
+
+  .bar{
+    display: inline;
+  }
+  .links{
+    display: none;
+  }
+  .contact-btn{
+    display: none;
+  }
+  .linksToggle {
+    position: absolute;
+    margin-top: 210px; 
+    
+    right: 5px;
+    width: 15%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .linksToggle a {
+    border-bottom: 1px solid white; 
+
+    display: block;
+  }
+}
+/* ENDS MEDIA FOR NAV */
 
 /* first div ends here */
 
