@@ -144,23 +144,16 @@ nav {
   z-index: -10;
 }
 
-.wave {
-  width: 100%;
-  margin-top: 580px;
 
-  animation: waveAnimation 5s linear infinite;
-}
 
-@keyframes waveAnimation {
-  0% {
-    transform: skewX(0deg);
-  }
-  50% {
-    transform: skewX(50deg);
-  }
-  100% {
-    transform: skewX(-0deg);
-  }
+
+
+
+.wave{
+   width:100%;
+    
+ 
+    margin-top: 610px;
 }
 
 /* first div ends here */
