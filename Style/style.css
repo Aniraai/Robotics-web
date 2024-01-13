@@ -233,16 +233,16 @@ nav {
   }
   .linksToggle {
     position: absolute;
-    margin-top: 210px; 
+   
+   height:200px;
     
-    right: 5px;
-    width: 15%;
-    background-color: #333;
-    z-index: 1;
+    width: 20%;
+    background-color: rgb(0,0,0);
+   
   }
 
   .linksToggle a {
-    border-bottom: 1px solid white; 
+    
 
     display: block;
   }
@@ -261,7 +261,7 @@ nav {
   justify-content: center;
 }
 #events {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 200px;
   margin-right: 200px;
 }
@@ -272,7 +272,7 @@ nav {
 #events #eventbtn {
   margin-top: 50px;
 
-  height: 50px;
+  height: 60px;
   width: 140px;
 
   background: linear-gradient(
@@ -285,13 +285,13 @@ nav {
   color: white;
   border: red;
   border-radius: 40px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   border: 2px solid #9e2a2b;
 }
 
 #events h1 {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 90px;
   font-weight: 900;
   font-size: 5rem;
 }
@@ -315,8 +315,9 @@ nav {
 #list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-right: 100px;
+  
 }
 
 .box {
@@ -328,6 +329,7 @@ nav {
   border-style: solid;
   border-color: #919191;
   color: #c7c6c3;
+  
 }
 .b1 {
   border-width: 0px 1px 1px 1px;
@@ -345,13 +347,13 @@ nav {
   );
 }
 .b4 {
-  border-width: 0px 1px 1px 0px;
+  border-width: 0px 1px 1px 1px;
 }
 .b5 {
   border-width: 0px 0px 0px 1px;
 }
 .b6 {
-  border-width: 0px 0px 0px 1px;
+  border-width: 0px 1px 0px 1px;
 }
 .b7 {
   border-width: 0px 0px 0px 1px;
@@ -374,14 +376,150 @@ nav {
   border: 2px solid #650b0b;
 }
 .box h2 {
-  padding-top: 31px;
-  font-size: 1.2rem;
+  padding-top: 9px;
+  font-size: 1.4rem;
 }
 
 .box p {
   padding-top: 16px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 24px;
+}
+/* event midea  */
+@media screen and (max-width: 900px){
+  .contant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #events {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  #events p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #events #eventbtn {
+    margin-top: 50px;
+  
+    height: 50px;
+    width: 140px;
+  
+    background: linear-gradient(
+      130deg,
+      rgba(156, 42, 43, 0.31),
+      rgba(116, 34, 35, 0.62),
+      rgb(44, 43, 43)
+    );
+  
+    color: white;
+    border: red;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    border: 2px solid #9e2a2b;
+  }
+  
+  #events h1 {
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 900;
+    font-size: 5rem;
+  }
+  #events p {
+    padding-bottom: 90px;
+  }
+  
+  /* animation in the animation  */
+  #events .contant {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s, transform 0.5s;
+  }
+  
+  #events .contant.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* ///////////////////middle part 
+   */
+  #list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 20px;
+    
+  }
+  
+  .box {
+    height: 200px;
+    width: 23%;
+    padding: 26px 7px 17px 18px;
+    border-radius: 1px;
+  
+    border-style: solid;
+    border-color: #919191;
+    color: #c7c6c3;
+    
+  }
+  .b1 {
+    border-width: 0px 1px 1px 1px;
+  }
+  .b2 {
+    border-width: 0px 1px 1px 0px;
+  }
+  .b3 {
+    border-width: 0px 1px 1px 0px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      211deg,
+      rgba(13, 13, 13) 43%,
+      rgba(102, 14, 14, 1) 100%
+    );
+  }
+  .b4 {
+    border-width: 0px 1px 1px 1px;
+  }
+  .b5 {
+    border-width: 0px 0px 1px 1px;
+  }
+  .b6 {
+    border-width: 0px 1px 1px 1px;
+  }
+  .b7 {
+    border-width: 0px 0px 0px 1px;
+  }
+  .b8 {
+    border-width: 0px 1px 0px 1px;
+  }
+  
+  .box img {
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 35px;
+    transition: height 0.2s ease-in-out;
+    -webkit-filter: blur(0.5px);
+  }
+  .box img:hover {
+    height: 40px;
+  }
+  .b3 img {
+    border: 2px solid #650b0b;
+  }
+  .box h2 {
+    padding-top: 3px;
+    font-size: 1.2rem;
+  }
+  
+  .box p {
+    padding-top: 16px;
+    font-size: 0.56rem;
+    line-height: 24px;
+  }
+
+
 }
 
 /* milestone section begins here */
@@ -498,6 +636,257 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (max-width: 900px) {
+ /* Original styles for desktop view */
+
+.milestone {
+  margin-top: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestone h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+
+#mile {
+  height: 50px;
+  width: 140px;
+  background: linear-gradient(
+    130deg,
+    rgba(156, 42, 43, 0.31),
+    rgba(116, 34, 35, 0.62),
+    rgb(44, 43, 43)
+  );
+  color: white;
+  border: red;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  border: 2px solid #9e2a2b;
+}
+
+.milestone p {
+  padding-top: 50px;
+padding-left: 80px;
+  width: 50vw;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.milecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: milestoneAnimation 0.5s ease forwards;
+}
+
+.milecontent {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.milecontent.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.milebox1,
+.milebox2 {
+  height: 300px;
+  width: 20%;
+  padding: 30px 7px 17px 18px;
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-style: solid;
+  border-color: #919191;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  backface-visibility: visible;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+  line-height: 27px;
+}
+
+.milebox2 {
+  height: 350px;
+  width: 16%;
+  padding: 30px 7px 17px 18px;
+  border-radius: 1px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-style: solid;
+  border-color: #919191;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+  line-height: 27px;
+}
+
+.milebox1,
+.milebox2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.milebox1.is-visible,
+.milebox2.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styles for mobile view */
+
+@media screen and (max-width: 900px) {
+ /* Original styles for desktop view */
+
+.milestone {
+  margin-top: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestone h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+
+#mile {
+  height: 50px;
+  width: 140px;
+  background: linear-gradient(
+    130deg,
+    rgba(156, 42, 43, 0.31),
+    rgba(116, 34, 35, 0.62),
+    rgb(44, 43, 43)
+  );
+  color: white;
+  border: red;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  border: 2px solid #9e2a2b;
+}
+
+.milestone p {
+  padding-top: 50px;
+  width: 50vw;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.milecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: milestoneAnimation 0.5s ease forwards;
+}
+
+.milecontent {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.milecontent.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.milebox1,
+.milebox2 {
+  height: 300px;
+  width: 20%;
+  padding: 30px 7px 17px 18px;
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-style: solid;
+  border-color: #919191;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  backface-visibility: visible;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+  line-height: 27px;
+}
+
+.milebox2 {
+  height: 350px;
+  width: 16%;
+  padding: 30px 7px 17px 18px;
+  border-radius: 1px;
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-style: solid;
+  border-color: #919191;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 100px;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+  line-height: 27px;
+}
+
+.milebox1,
+.milebox2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.milebox1.is-visible,
+.milebox2.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styles for mobile view */
+
+@media screen and (max-width: 900px) {
+  .milestone {
+    margin-top: 50px;
+  }
+
+  .milestone h1 {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+
+  #mile {
+    width: 120px;
+    font-size: 1.2rem;
+  }
+
+  .milestone p {
+    padding-top: 30px;
+    width: 80%;
+  }
+  
+  .milebox1,
+  .milebox2 {
+    height: 250px;
+    width: 37%;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+}
+
+}
+
+}
 /* ---------------------------------------------------- */
 
 /* testimoial section css */
@@ -551,13 +940,13 @@ nav {
   height: 15.5rem;
   background: linear-gradient(rgba(107, 19, 19, 1), rgba(40, 22, 22, 1));
   border-radius: 0.25rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 #test1 p {
   margin-top: -138px;
   margin-left: 20px;
   padding-right: 50px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 
   color: #898b8d;
 }
@@ -578,6 +967,13 @@ nav {
 .testimoials div.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+@media screen and (max-width:900px){
+ .testimoials {
+  height: 700px;
+  margin-top: 100px;
+  background-color: rgba(66, 66, 66, 0.4);
+} 
 }
 /* about section css */
 
